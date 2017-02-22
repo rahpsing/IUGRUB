@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+ 
+ <hibernate-mapping>
+ <class name = "app.com.iugrub.pojo.StoreAddress" table = "StoreAddress">
+ 
+ <id name = "id">
+ <generator class = "uuid"></generator>
+ </id>
+ 
+ <property name="strAddressLine" column="addressLine"></property>
+ <many-to-one name="objCampus" column="campus" class="app.com.iugrub.pojo.Campus" cascade="all"></many-to-one>
+ 
+ <one-to-one name="objFoodStore" cascade="all"></one-to-one>
+ </class>
+ 
+ </hibernate-mapping> 

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+ 
+ <hibernate-mapping>
+ <class name = "app.com.iugrub.pojo.FoodStore" table = "FoodStore" lazy="false">
+ 
+ <id name = "id">
+ <generator class = "uuid"></generator>
+ </id>
+ 
+ <property name="strStoreName" column="storeName"></property>
+
+ 
+  	<bag name="listCuisines" cascade = "all">
+ 		<key column = "storeId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.Cuisine"/>
+ 	</bag>
+ 	
+ 	<bag name="listContactNumbers" cascade = "all">
+ 		<key column = "storeId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.StoreContactDetails"/>
+ 	</bag>
+ 	
+ 	 <bag name="listOfItems" cascade = "all">
+ 		<key column = "storeId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.FoodItem"/>
+ 	</bag>
+ 	
+ 	 <bag name="listOfOffers" cascade = "all">
+ 		<key column = "storeId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.Offers"/>
+ 	</bag>
+  
+	 <one-to-one name="objStoreAddress" cascade="all"></one-to-one>
+ 
+ </class>
+ </hibernate-mapping> 

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+ 
+ <hibernate-mapping>
+ <class name = "app.com.iugrub.pojo.User" table ="IUGrubUser" discriminator-value="User">
+ 
+ <id name = "id">
+ <generator class = "uuid"></generator>
+ </id>
+ 
+ <discriminator column = "userType" type = "string"></discriminator>
+ <property name="strEmailAddress" column="emailAddress"></property>
+ <property name="strUserName" column="userName"></property>
+ <property name="strPassword" column="password"></property>
+ <property name="lastLogin" type="timestamp"></property>
+ 
+ <subclass name = "app.com.iugrub.pojo.AdminUser" discriminator-value="ADMIN">
+ 	<bag name="listFoodStore" cascade = "all">
+ 		<key column = "adminId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.FoodStore"/>
+ 	</bag>
+ </subclass>
+  <subclass name = "app.com.iugrub.pojo.WebUser" discriminator-value="WEBUSER">
+  	<property name="strDisplayName" column="displayName"></property>
+  	<bag name="listReviews" cascade = "all">
+ 		<key column = "userId"></key>
+ 		<one-to-many class = "app.com.iugrub.pojo.Review"/>
+ 	</bag>
+  </subclass>
+ </class>
+ </hibernate-mapping> 

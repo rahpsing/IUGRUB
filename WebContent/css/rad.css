@@ -1,0 +1,568 @@
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    /*margin-right:-4px;*/
+	max-width: 1024px;
+}
+a, a:hover, a:visited, a:active, a:focus {
+	color: inherit;
+	cursor: normal;
+	text-decoration: none;
+}
+@font-face {
+    font-family: radFontBlackItalic;
+    src: url('/fonts/RadFont/AlegreyaSans-BlackItalic.otf');
+	font-weight: bold;
+}
+@font-face {
+    font-family: radFontLightItalic;
+    src: url('/fonts/RadFont/AlegreyaSans-LightItalic.otf');
+}
+@font-face {
+    font-family: radFontThinItalic;
+    src: url('/fonts/RadFont/AlegreyaSans-ThinItalic.otf');
+}
+@font-face {
+    font-family: radFontBoldItalic;
+    src: url('/fonts/RadFont/AlegreyaSans-BoldItalic.otf');
+}
+.clear{clear:both;}
+
+
+body	{
+
+	background:#111111;
+	width: 100%;
+	font-family: 'radFontLightItalic',sans-serif;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.barrow{
+	padding-top: 24px;
+}
+
+	#headerbar{
+		background: url('/img/v2/firstrowback.png') no-repeat top center;
+		background-color: #111 !important;
+		background-size: 1064px;
+	}
+		.homecall{
+			font-family: 'radFontBlackItalic';
+			color: #fff;
+			font-size: 20px;
+			line-height: 90%;
+			text-align: left;
+			background: url('/img/v2/logo.png') no-repeat left center;
+			background-size: 66px;
+			width: 161px;
+			height: 66px;
+			padding-top: 15px;
+			padding-left: 88px;
+			text-transform: uppercase;
+		}
+		
+			.eachnav{
+				text-align: center;
+				font-family: radFontBoldItalic;
+				font-size: 14px;
+				color: #fff;
+				cursor: pointer;
+				text-transform: uppercase;
+				padding-top: 10px;
+				position: relative;
+			}
+
+			.eachsocial, .footersocial{
+				float:left;
+				height: 24px;
+				width: 24px;
+				background-size: 24px 24px;
+				background-repeat: no-repeat;
+				margin-right: 8px;
+			}
+
+			.footersocial{
+				float: none;
+				margin: 0 auto;
+			}
+
+				.socialfb{
+					background-image: url('/img/v2/social_fb.png');
+				}
+
+				.socialtwitter{
+					background-image: url('/img/v2/social_twitter.png');
+				}
+
+				.socialinsta{
+					background-image: url('/img/v2/social_insta.png');
+				}
+
+			.copy{
+				font-family: radFontBlackItalic;
+				text-transform: uppercase;
+				color: #ffffff;
+				margin-top: 10px;
+				text-align:right;
+			}
+
+	#mobilebar{
+		padding-top: 25px;
+	}
+		.mobileimage{
+			height: 515px;
+			background: url('/img/v2/phoneshot.png') no-repeat top right;
+			background-size: 384px;
+		}
+		
+		.tagline{
+			font-size: 48px;
+			line-height: 50px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: left;
+			padding-top: 60px;
+			font-family: radFontThinItalic;
+		}
+		
+			.weight{
+				font-family: radFontBlackItalic;
+			}
+			
+			.semiweight{
+				text-transform: lowercase !important;
+			}
+			
+		.tagtext{
+			font-size: 20px;
+			text-align: left;
+			color: #fff;
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+
+		.twotext{
+			padding-top: 0;
+			font-family: radFontThinItalic;
+			text-transform: uppercase;
+		}
+		
+				#emailsubmit{
+					width: 150px;
+					position: absolute;
+					font-size: 20px;
+					padding: 15px 25px;
+					background-color: #ff0000;
+					border: none;
+					color: #ffffff;
+					border-top-right-radius: 30px;
+					border-top-left-radius: 30px;
+					border-bottom-right-radius: 30px;
+					border-bottom-left-radius: 30px;
+					right: 0px;
+				}
+
+					#emailsubmit:hover{
+						color: #1d1d1d;
+					}
+					
+				#emailinput	{
+					padding: 15px 25px 15px 25px;
+					font-size: 20px;
+					width:410px;
+					border: none;
+					border-bottom-left-radius: 30px;
+					border-top-left-radius: 30px;
+					color: #1d1d1d;
+				}	
+
+					::-webkit-input-placeholder {
+						color: #1d1d1d;
+					}
+
+					:-moz-placeholder {
+					 /* Firefox 18- */
+						color: #1d1d1d;  
+					}
+
+					::-moz-placeholder {
+					  /* Firefox 19+ */
+						color:#1d1d1d;  
+					}
+
+					:-ms-input-placeholder { 
+						color: #1d1d1d;  
+					}
+					
+				.smallnotice{
+					font-size: 18px;
+					color: #999;
+					text-align: left;
+					padding-top: 10px;
+				}
+	#featuresbar{
+		background: url('/img/v2/secondrowback.png') no-repeat bottom center;
+	}
+	
+		#featureslist{
+			padding-top: 5px;
+		}
+		
+			.featuresheading{
+				font-size: 50px;
+				color: #fff;
+				line-height: 90px;
+				text-transform: uppercase;
+				text-align: center;
+				padding-top: 40px;
+				padding-bottom: 80px;
+				font-family: radFontThinItalic;
+				word-spacing: 20px;
+			}
+			
+				.eachfeature{
+					font-size: 20px;
+					color: #fff;
+					text-align: center;
+					line-height: 30px;
+					padding-top: 110px;
+					padding-bottom: 8px;
+				}
+
+					.featuremagnet{
+						background: url('/img/v2/feature_magnet.png') no-repeat top center;
+						background-size: 110px;
+					}
+				
+					.featurecategory{
+						background: url('/img/v2/feature_category.png') no-repeat top center;
+						background-size: 60px;
+					}
+				
+					.featuresocial{
+						background: url('/img/v2/feature_fb.png') no-repeat top center;
+						background-size: 40px;
+					}
+
+
+		.eachcategory{
+			font-size: 16px;
+			color: #ffffff;
+			font-family: radFontBoldItalic;
+			text-align: left;
+			padding-left: 32px;
+			background-position: center left;
+			background-repeat: no-repeat;
+			background-size: 26px 26px;
+			text-transform: uppercase;
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+
+			.news{
+				background-image: url('/img/v2/category_news.png');
+			}
+			
+			.movies{
+				background-image: url('/img/v2/category_movies.png');
+			}
+			
+			.blogs{
+				background-image: url('/img/v2/category_blogs.png');
+			}
+			
+			.fitness{
+				background-image: url('/img/v2/category_fitness.png');
+			}
+			
+			.hotspots{
+				background-image: url('/img/v2/category_hotspots.png');
+			}
+			
+			.deals{
+				background-image: url('/img/v2/category_deals.png');
+			}
+			
+			.events{
+				background-image: url('/img/v2/category_events.png');
+			}
+			
+			.sports{
+				background-image: url('/img/v2/category_sports.png');
+			}
+			
+			.lifestyle{
+				background-image: url('/img/v2/category_lifestyle.png');
+			}
+			
+			.lifehacks{
+				background-image: url('/img/v2/category_lifehacks.png');
+			}
+			
+			.backpacking{
+				background-image: url('/img/v2/category_backpacking.png');
+			}
+			
+			.jobs{
+				background-image: url('/img/v2/category_jobs.png');
+			}
+		
+		.mobilescreens{
+			height: 780px;
+			background: url('/img/screensimg.png') no-repeat right bottom;
+		}
+		
+		
+		#teambar{
+			background: url('/img/v2/forthrowback.png') no-repeat top right;
+			background-size: 1180px auto;
+			margin-top: -600px;
+			background-color: transparent !important;
+			padding-bottom: 130px;
+		}
+		
+			.teamlist{
+				margin-top: -214px;
+			}
+			
+			.teamtext{
+				font-size: 22px;
+				text-align: right;
+				color: #ff0000;
+				line-height:54px;
+				padding-top: 80px;
+			}
+			
+				.bigtext{
+					font-size: 60px;
+					margin-top: -20px;
+				}
+				.teamlogo{
+					margin-top: 25px;
+					background: url('/img/darklogo.png') no-repeat right center;
+					height: 114px;
+				}
+
+				.eachteam{
+					height: 160px;
+					width: 160px;
+					border-radius: 8px;
+					margin: 0 auto 20px;
+					position: relative;
+				}
+
+				.nik{
+					background-image: url('/img/v2/nik.jpg');
+					background-size: 160px 160px;
+				}
+
+				.tj{
+					background-image: url('/img/v2/tj.png');
+					background-size: 160px 160px;
+				}
+
+				.gov{
+					background-image: url('/img/v2/govind.jpg');
+					background-size: 160px 160px;
+				}
+
+				.div{
+					background-image: url('/img/v2/divyansh.jpg');
+					background-size: 160px 160px;
+				}
+
+				.shwey{
+					background-image: url('/img/v2/shwetha.jpg');
+					background-size: 160px 160px;
+				}
+
+				.ash{
+					background-image: url('/img/v2/ash.jpg');
+					background-size: 160px 160px;
+				}
+
+				.rdb{
+					background-image: url('/img/v2/rdb.jpg');
+					background-size: 160px 160px;
+				}
+
+					.eachteamname{
+						font-family: radFontBlackItalic;
+						color: #ffffff;
+						text-transform: uppercase;
+						text-align: center;
+						position: absolute;
+						font-size: 16px;
+						width: 100%;
+						bottom: 8px;
+					}
+
+					.nametint{
+						background: #000000;
+						height:100%;
+						width:100%;
+						border-radius: 8px;
+						opacity: 0.2;
+					}
+
+
+		#footerbar{
+			background-color: #111 !important;
+			background: url('/img/v2/footer_back.png') no-repeat center center;
+			padding-bottom: 30px;
+		}
+		
+		.footerline{
+			line-height: 66px;
+		}
+		
+		.registerline{
+			font-size: 28px;
+			font-family: radFontBlackItalic;
+			text-transform: uppercase;
+			text-align: left;
+			color: #ff0000;
+			line-height: 30px;
+			padding-top: 60px;
+		}
+		
+			.footerinput{
+				padding: 18px 25px 18px 25px;
+				font-size: 20px;
+				width:100%;
+				border: none;
+				border-top-right-radius: 30px;
+				border-top-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+				border-bottom-left-radius: 30px;
+				color: #1d1d1d;
+				margin-top: 10px;
+			}
+
+			#citysubmit, #subscribesubmit{
+				width: 140px;
+				font-size: 20px;
+				padding-top:12px;
+				padding-bottom:12px;
+				/*padding: 12px 25px;*/
+				background-color: #999999;
+				border: none;
+				color: #ffffff;
+				border-top-right-radius: 30px;
+				border-top-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+				border-bottom-left-radius: 30px;
+				margin-top: 20px;
+				font-family: radFontBlackItalic;
+				background: #ff0000;
+			}
+
+				#citysubmit:hover{
+					background-color: #ff0000;
+					color: #1d1d1d;
+				}
+				
+			.social{
+				height: 54px;
+			}
+				.fb{
+					background: url('/img/fb.png') no-repeat left center;
+				}
+				.twitter{
+					background: url('/img/twitter.png') no-repeat left center;
+				}
+				.instagram{
+					background: url('/img/instagram.png') no-repeat left center;
+				}
+
+		#featureslistbar{
+			background-color: #424343 !important;
+			background: url('/img/v2/thirdrowback.png') no-repeat 196px top;
+			background-size: 1000px auto;
+		}
+
+.formsuccess{
+	  color: #ff0000;
+	  font-size: 28px;
+	  text-align: center;
+}
+
+.download_button{
+	font-family: radFontBlackItalic;
+	font-size:40px;
+	line-height: 45px;
+	padding-left: 40px;
+	background: url('/img/play_store.png') no-repeat 10px center;
+	background-size: 60px;
+	padding: 10px 10px 10px 80px !important;
+	background-color: #ff0000;
+	border-radius: 10px;
+	width: 308px;
+}
+
+.categoryplay, .subscribe{
+	margin-top: 30px;
+}
+
+.download_button_mini_text{
+	font-size:15px;
+	line-height: 16px;
+	font-family: radFontLightItalic;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#headerbar{background-size: 404px;}
+	.col-centered{min-width: 300px;}
+	.tagline{font-size: 50px;text-align: center;padding-top:0;}
+	.tagtext{text-align: center;}
+	#emailinput{width:290px;}
+	#mobilebar{padding-bottom: 130px;}
+	.formsuccess{text-align: center;}
+	.homecall{margin: 0 auto 24px;background: none;font-size: 40px;}
+	#emailsubmit{right: 15px;}
+	.eachnav{font-size: 16px;text-align: left;}
+	.copy{text-align: center;}
+	.navigation{margin-top: 20px;}
+	.tagline{font-size: 40px;}
+	.smallnotice{text-align: center;}
+	.mobileimage{background-size: 270px;height: 305px;background-position: top center;margin-top: 50px;}
+	#mobilebar{padding-bottom: 0;}
+	#featuresbar{margin-top: -6px;background-color: #c00000;}
+	.featuresheading{font-size: 62px;line-height: 65px;text-align: center;padding-top: 55px;}
+	.eachfeature{font-size:22px;padding-top: 70px;margin-bottom: 40px;}
+	.mobilescreens{background-size: 290px;height: 437px;background-position: top center;}
+	.teamtext{text-align: center; padding-top: 10px;float: left;width:200px;}
+	.teamlogo{background-size:110px;background-position: right 40px center;}
+	.teambanner{margin: 30px 0;}
+	.teammembers{padding-top:0;}
+	.membertitle{padding-left: 0;text-align: center;}
+	.membernick{padding-left: 0;text-align: center;}
+	.registerline{text-align: center;padding-top: 24px;}
+	.download_button{width:288px;font-size:36px;}
+	.brandtext{margin-top: 50px;}
+	.eachcategory{padding-left: 48px; background-position: left 8px center;}
+	.categoryplay, .subscribe{margin-top: 30px;}
+	#teambar{background-size: 380px 2422px;margin-top: -1276px;padding-bottom: 0;}
+	.tabifx{padding-top: 35px;word-spacing: 0;}
+	.phonefix{line-height: 50px;}.copy{margin-top: 48px;}
+
+}
+
+@media only screen and (min-device-width : 490px) and (max-device-width : 1024px) {
+	.mobilescreens{background-size: 360px;height: 437px;background-position: bottom center;}
+	#teambar{background-size: 1000px auto !important;}.teamlist{margin-top: -280px}
+	.eachteam{height: 140px; width: 140px; background-size: 140px 140px;}
+	.tabifx{padding-bottom: 0px;}
+	.homecall{margin: 0 auto;}
+	.registerline{padding-top: 75px;}
+}
+				

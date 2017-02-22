@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+ 
+ <hibernate-mapping>
+ <class name = "app.com.iugrub.pojo.Offers" table = "Offers">
+ 
+ <id name = "id">
+ <generator class = "uuid"></generator>
+ </id>
+ 
+ <property name="strOfferName" column="offerName"></property>
+ <property name="strOfferDetails" column="offerDetails"></property>
+ <property name="offerStartDate" type="timestamp"></property>
+ <property name="offerEndDate" type="timestamp"></property>
+ <property name="isNeverExpire"></property>
+ 
+ 
+ 
+ </class>
+ </hibernate-mapping> 
